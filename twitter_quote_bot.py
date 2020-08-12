@@ -8,7 +8,6 @@ import json
 import random
 import tweepy
 import time
-import credentials
 from os import environ
 
 
@@ -45,10 +44,10 @@ def create_tweet():
 # In[5]:
 
 
-CONSUMER_KEY = credentials['CONSUMER_KEY']
-CONSUMER_SECRET = credentials['CONSUMER_SECRET']
-ACCESS_KEY = credentials['ACCESS_KEY']
-ACCESS_SECRET = credentials['ACCESS_SECRET']
+CONSUMER_KEY = environ['CONSUMER_KEY']
+CONSUMER_SECRET = environ['CONSUMER_SECRET']
+ACCESS_KEY = environ['ACCESS_KEY']
+ACCESS_SECRET = environ['ACCESS_SECRET']
 
 
 # In[6]:
