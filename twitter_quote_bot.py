@@ -45,10 +45,10 @@ def create_tweet():
 # In[5]:
 
 
-CONSUMER_KEY = environ['CONSUMER_KEY']
+CONSUMER_KEY = credentials['CONSUMER_KEY']
 CONSUMER_SECRET = credentials['CONSUMER_SECRET']
 ACCESS_KEY = credentials['ACCESS_KEY']
-ACCESS_SECRET = credentials.['ACCESS_SECRET']
+ACCESS_SECRET = credentials['ACCESS_SECRET']
 
 
 # In[6]:
