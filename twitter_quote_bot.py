@@ -54,13 +54,12 @@ ACCESS_SECRET = environ['ACCESS_SECRET']
 
 
 def  tweet_quote():
-    interval = 43200
+    interval = 43201
     auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
     auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
     api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
     
     while True:
-        print('pegando citação...')
         tweet = create_tweet()
         api.update_status(tweet)
         time.sleep(interval)
