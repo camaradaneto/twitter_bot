@@ -54,7 +54,7 @@ ACCESS_SECRET = environ['ACCESS_SECRET']
 
 
 def  tweet_quote():
-    interval = 43201
+    interval = 86401
     auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
     auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
     api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
